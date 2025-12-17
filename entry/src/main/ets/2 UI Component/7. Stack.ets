@@ -4,9 +4,10 @@
 struct Index {
   build() {
     Column(){
-      Text('层叠组件布局')
+      Text('层叠布局 : Stack')
         .fontSize(28)
         .fontWeight(700)
+      Text('组件需要有堆叠效果时优先考虑此布局。')
       Stack({alignContent: Alignment.TopStart}){
         Text()
           .backgroundColor(Color.Gray)

@@ -3,9 +3,10 @@
 struct Index {
   build() {
     Column({ space: 10}) {         // space：子组件之间的间距
-      Text("Column & Row")
-        .fontSize(32)
+      Text("线性布局： Column & Row")
+        .fontSize(28)
         .fontWeight(700)
+      Text('如果布局内子元素超过1个时，且能够以某种方式线性排列时优先考虑此布局。')
 
       Row({ space: 10}) {
         Column() {   // Column， 用于沿 垂直方向 布局

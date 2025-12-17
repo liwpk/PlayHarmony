@@ -3,7 +3,9 @@
 struct Index {
   build() {
     Column(){
-
+      Text('弹性布局')
+        .fontSize(28)
+      Text('弹性布局是与线性布局类似的布局方式。区别在于弹性布局默认能够使子组件压缩或拉伸。')
       Flex() {
         Text('弹性布局')
           .width(100)
