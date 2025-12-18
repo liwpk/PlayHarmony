@@ -1,0 +1,28 @@
+
+@Entry
+@Component
+
+struct Index {
+  @State simpleList: Array<string> = ['one', 'two', 'three']
+
+  build() {
+    Column(){
+      ForEach(this.simpleList,(item: string) => {
+        ChildItem({item: item})
+      }, (item: number) => item.toString())
+    }
+    .width('100%')
+    .height('100%')
+    .backgroundColor(0xF1F3F5)
+  }
+}
+
+
+@Component
+struct ChildItem {
+  @Prop item: string
+  build() {
+    Text(this.item)
+      .fontSize(30)
+  }
+}
